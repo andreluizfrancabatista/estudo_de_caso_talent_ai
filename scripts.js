@@ -106,20 +106,20 @@ const stakeholders = [
         ]
     },
     {
-    id: 8,
-    icone: "👨‍💼",
-    titulo: "Candidato Aprovado pelo Sistema",
-    resumo: "Profissional selecionado pela IA que considera o processo justo, eficiente e meritocrático.",
-    objetivoPrincipal: "Defender a legitimidade do processo seletivo automatizado que o aprovou, argumentar que o sistema é mais objetivo que recrutadores humanos, e demonstrar que candidatos qualificados são recompensados independentemente de conexões pessoais ou aparência.",
-    argumentos: [
-        "Fui aprovado com base nas minhas competências reais, não por networking ou conhecer alguém na empresa - isso é verdadeira meritocracia",
-        "O processo foi extremamente eficiente: recebi resposta em 3 dias, enquanto em outros processos esperei semanas ou nunca recebi retorno",
-        "Não precisei gastar dinheiro com deslocamento, roupa formal ou tirar dia de trabalho para entrevistas presenciais - democratiza o acesso",
-        "Sistema não se importou com minha aparência, sotaque ou se fui simpático - avaliou apenas minhas qualificações técnicas e experiência",
-        "Perguntas padronizadas no vídeo foram justas: todos responderam as mesmas, sem 'pegadinhas' ou perguntas capciosas de recrutadores",
-        "Quem reclama do sistema geralmente não atende aos requisitos; é mais fácil culpar a tecnologia do que admitir que faltam qualificações"
-    ]
-},
+        id: 8,
+        icone: "👨‍💼",
+        titulo: "Candidato Aprovado pelo Sistema",
+        resumo: "Profissional selecionado pela IA que considera o processo justo, eficiente e meritocrático.",
+        objetivoPrincipal: "Defender a legitimidade do processo seletivo automatizado que o aprovou, argumentar que o sistema é mais objetivo que recrutadores humanos, e demonstrar que candidatos qualificados são recompensados independentemente de conexões pessoais ou aparência.",
+        argumentos: [
+            "Fui aprovado com base nas minhas competências reais, não por networking ou conhecer alguém na empresa - isso é verdadeira meritocracia",
+            "O processo foi extremamente eficiente: recebi resposta em 3 dias, enquanto em outros processos esperei semanas ou nunca recebi retorno",
+            "Não precisei gastar dinheiro com deslocamento, roupa formal ou tirar dia de trabalho para entrevistas presenciais - democratiza o acesso",
+            "Sistema não se importou com minha aparência, sotaque ou se fui simpático - avaliou apenas minhas qualificações técnicas e experiência",
+            "Perguntas padronizadas no vídeo foram justas: todos responderam as mesmas, sem 'pegadinhas' ou perguntas capciosas de recrutadores",
+            "Quem reclama do sistema geralmente não atende aos requisitos; é mais fácil culpar a tecnologia do que admitir que faltam qualificações"
+        ]
+    },
     {
         id: 9,
         icone: "📰",
@@ -155,19 +155,19 @@ const stakeholders = [
 // Função para carregar stakeholders na página
 function carregarStakeholders() {
     const container = document.getElementById('lista-stakeholders');
-    
+
     stakeholders.forEach(stakeholder => {
         const card = document.createElement('div');
         card.className = 'card-stakeholder';
         card.onclick = () => abrirModal(stakeholder);
-        
+
         card.innerHTML = `
             <div class="icone">${stakeholder.icone}</div>
             <h3>${stakeholder.titulo}</h3>
             <p class="resumo">${stakeholder.resumo}</p>
             <span class="ver-mais">Ver detalhes →</span>
         `;
-        
+
         container.appendChild(card);
     });
 }
@@ -176,12 +176,12 @@ function carregarStakeholders() {
 function abrirModal(stakeholder) {
     const modal = document.getElementById('modal-stakeholder');
     const modalBody = document.getElementById('modal-body');
-    
+
     let argumentosHTML = '';
     stakeholder.argumentos.forEach(arg => {
         argumentosHTML += `<li>${arg}</li>`;
     });
-    
+
     modalBody.innerHTML = `
         <h2>${stakeholder.icone} ${stakeholder.titulo}</h2>
         <p class="modal-resumo">${stakeholder.resumo}</p>
@@ -196,7 +196,7 @@ function abrirModal(stakeholder) {
             ${argumentosHTML}
         </ul>
     `;
-    
+
     modal.style.display = 'block';
 }
 
@@ -210,23 +210,23 @@ function fecharModal() {
 function configurarNavegacao() {
     const botoes = document.querySelectorAll('.btn-nav');
     const secoes = document.querySelectorAll('.secao');
-    
+
     botoes.forEach(botao => {
         botao.addEventListener('click', () => {
             const secaoAlvo = botao.getAttribute('data-secao');
-            
+
             // Remove classe ativa de todos os botões
             botoes.forEach(b => b.classList.remove('active'));
-            
+
             // Adiciona classe ativa ao botão clicado
             botao.classList.add('active');
-            
+
             // Esconde todas as seções
             secoes.forEach(secao => secao.classList.remove('ativa'));
-            
+
             // Mostra seção alvo
             document.getElementById(secaoAlvo).classList.add('ativa');
-            
+
             // Scroll suave para o topo
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
@@ -237,10 +237,10 @@ function configurarNavegacao() {
 document.addEventListener('DOMContentLoaded', () => {
     carregarStakeholders();
     configurarNavegacao();
-    
+
     // Fechar modal ao clicar no X
     document.querySelector('.fechar').onclick = fecharModal;
-    
+
     // Fechar modal ao clicar fora dele
     window.onclick = (event) => {
         const modal = document.getElementById('modal-stakeholder');
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fecharModal();
         }
     };
-    
+
     // Fechar modal com tecla ESC
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
