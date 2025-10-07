@@ -106,20 +106,20 @@ const stakeholders = [
         ]
     },
     {
-        id: 8,
-        icone: "👩‍⚖️",
-        titulo: "Representante do Ministério Público do Trabalho",
-        resumo: "Procuradora responsável por fiscalizar cumprimento de direitos trabalhistas e combater discriminação.",
-        objetivoPrincipal: "Investigar se sistema viola direitos trabalhistas e princípios constitucionais de igualdade, assegurar que empresas não usem tecnologia para mascarar práticas discriminatórias, e estabelecer precedentes regulatórios para uso ético de IA em relações de trabalho.",
-        argumentos: [
-            "MPT tem poder de instaurar inquérito civil e exigir auditoria técnica completa do algoritmo, incluindo dados de treinamento e lógica de decisão",
-            "Se sistema resulta em impacto desproporcional contra grupos protegidos (mulheres, negros, pessoas com deficiência), configura discriminação indireta ilegal",
-            "Constituição garante igualdade material, não apenas formal; empresas não podem se esconder atrás de 'neutralidade técnica' para violar direitos fundamentais",
-            "Estudos de caso de sistemas similares mostram padrões: precisamos de regulação preventiva, não apenas reativa após danos massivos já causados",
-            "Termo de Ajustamento de Conduta pode exigir: revisão humana obrigatória, transparência de critérios, compensação para discriminados, auditoria periódica",
-            "Interesse público exige que Estado regule inovações que afetam direito ao trabalho; liberdade empresarial não é absoluta quando colide com direitos sociais"
-        ]
-    },
+    id: 8,
+    icone: "👨‍💼",
+    titulo: "Candidato Aprovado pelo Sistema",
+    resumo: "Profissional selecionado pela IA que considera o processo justo, eficiente e meritocrático.",
+    objetivoPrincipal: "Defender a legitimidade do processo seletivo automatizado que o aprovou, argumentar que o sistema é mais objetivo que recrutadores humanos, e demonstrar que candidatos qualificados são recompensados independentemente de conexões pessoais ou aparência.",
+    argumentos: [
+        "Fui aprovado com base nas minhas competências reais, não por networking ou conhecer alguém na empresa - isso é verdadeira meritocracia",
+        "O processo foi extremamente eficiente: recebi resposta em 3 dias, enquanto em outros processos esperei semanas ou nunca recebi retorno",
+        "Não precisei gastar dinheiro com deslocamento, roupa formal ou tirar dia de trabalho para entrevistas presenciais - democratiza o acesso",
+        "Sistema não se importou com minha aparência, sotaque ou se fui simpático - avaliou apenas minhas qualificações técnicas e experiência",
+        "Perguntas padronizadas no vídeo foram justas: todos responderam as mesmas, sem 'pegadinhas' ou perguntas capciosas de recrutadores",
+        "Quem reclama do sistema geralmente não atende aos requisitos; é mais fácil culpar a tecnologia do que admitir que faltam qualificações"
+    ]
+},
     {
         id: 9,
         icone: "📰",
