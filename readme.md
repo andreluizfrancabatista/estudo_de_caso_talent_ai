@@ -95,10 +95,10 @@ npx serve
 
 #### Variações de Dinâmica
 
-**Júri Simulado:**
-- Um grupo atua como "juízes"
+**Comitê de ética Simulado:**
+- Um grupo atua como membros do comitê de ética
 - Outros grupos apresentam argumentos pró e contra
-- Juízes deliberam e tomam decisão fundamentada
+- Membros deliberam e tomam decisão fundamentada
 
 **Audiência Pública:**
 - Um aluno representa autoridade reguladora
@@ -203,14 +203,6 @@ A aplicação é totalmente responsiva e se adapta a:
 - 💻 Desktops (≥ 1024px)
 - 🖥️ Telas grandes (≥ 1440px)
 
-## 🌐 Compatibilidade
-
-Testado e funcional em:
-- ✅ Google Chrome 90+
-- ✅ Mozilla Firefox 88+
-- ✅ Safari 14+
-- ✅ Microsoft Edge 90+
-
 ## 📝 Licença
 
 Este material é disponibilizado para **uso educacional livre**. Professores e educadores podem:
@@ -222,23 +214,6 @@ Ao usar ou modificar este material, considere:
 - Manter créditos de autoria
 - Compartilhar melhorias com a comunidade
 - Respeitar o propósito educacional
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Se você é educador e tem sugestões de melhorias:
-
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/NovaFuncionalidade`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
-5. Abra um Pull Request
-
-### Ideias para Contribuição
-- Novos estudos de caso sobre outras tecnologias
-- Traduções para outros idiomas
-- Recursos adicionais (vídeos, artigos, datasets)
-- Melhorias de acessibilidade
-- Exercícios e atividades complementares
 
 ## 📚 Recursos Adicionais
 
@@ -268,13 +243,3 @@ Contribuições são bem-vindas! Se você é educador e tem sugestões de melhor
 Este estudo de caso foi desenvolvido como material pedagógico para disciplinas de Computação e Sociedade, Ética em Tecnologia, Ciência de Dados e áreas correlatas.
 
 **Objetivo:** Fomentar discussão crítica e informada sobre o impacto social de tecnologias emergentes, preparando profissionais de tecnologia para tomar decisões éticas e socialmente responsáveis.
-
-## 📧 Contato
-
-Para dúvidas, sugestões ou compartilhamento de experiências de uso em sala de aula, entre em contato através das issues do GitHub.
-
----
-
-**Última atualização:** Outubro 2025  
-**Versão:** 1.0  
-**Status:** Ativo e em manutenção
